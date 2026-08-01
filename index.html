@@ -68,33 +68,44 @@
 
 </header>
 
-    <!-- ================= HERO ================= -->
-    <section id="home">
+ <!-- ================= HERO ================= -->
 
-        <div>
+<section id="home">
 
-            <img src="assets/image/IMG_2128.jpeg" alt="Udhaya Sankar">
+    <!-- Left -->
+    <div class="hero-image">
+
+        <img src="assets/image/IMG_2128.jpeg" alt="Udhaya Sankar">
+
+    </div>
+
+    <!-- Right -->
+    <div class="hero-content">
+
+        <h1>Udhaya Sankar M</h1>
+
+        <h2>Python Backend Developer</h2>
+
+        <p>
+            Motivated Python Backend Developer with hands-on experience in
+            Python, Django, FastAPI and REST API Development.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn">
+                View My Work
+            </a>
+
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
 
         </div>
 
-        <div>
+    </div>
 
-            <h1>Udhaya Sankar M</h1>
-
-            <h2>Python Backend Developer</h2>
-
-            <p>
-                Motivated Python Backend Developer with hands-on experience in
-                Python, Django, FastAPI and REST API Development.
-            </p>
-
-            <a href="#projects" class="btn">View My Work</a>
-
-            <a href="#contact" class="btn">Contact Me</a>
-
-        </div>
-
-    </section>
+</section>
 
     <!-- ================= ABOUT ================= -->
 
@@ -493,7 +504,7 @@
 
         <div class="project-card">
 
-            <img src="assets/project1.png" alt="Student Management System">
+            <img src="assets/image/project1.png" alt="Student Management System">
 
             <div class="project-content">
 
@@ -538,7 +549,7 @@
 
         <div class="project-card">
 
-            <img src="assets/project2.png" alt="Stackly Email Management System">
+            <img src="assets/image/project2.png" alt="Stackly Email Management System">
 
             <div class="project-content">
 
@@ -581,7 +592,7 @@
 
         <div class="project-card">
 
-            <img src="assets/project3.png" alt="Subledger Management System">
+            <img src="assets/image/project3.png" alt="Subledger Management System">
 
             <div class="project-content">
 
@@ -630,7 +641,7 @@
 
         <div class="project-card">
 
-            <img src="assets/project4.png" alt="CollabDocs API">
+            <img src="assets/image/project4.png" alt="CollabDocs API">
 
             <div class="project-content">
 
@@ -860,32 +871,36 @@
 
         <div class="contact-form">
 
-            <form id="contactForm">
+            <form id="contactForm"
+                    action="https://formspree.io/f/xwvgdred"
+                    method="POST">
 
                 <input
                     type="text"
+                    name="name"
                     placeholder="Your Name"
                     required>
 
                 <input
                     type="email"
+                    name="email"
                     placeholder="Your Email"
                     required>
 
                 <input
                     type="text"
+                    name="subject"
                     placeholder="Subject"
                     required>
 
                 <textarea
                     rows="6"
+                    name="message"
                     placeholder="Your Message"
                     required></textarea>
 
                 <button type="submit" class="btn">
-
                     Send Message
-
                 </button>
 
             </form>

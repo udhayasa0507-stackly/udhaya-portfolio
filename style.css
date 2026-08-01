@@ -297,94 +297,71 @@ header{
 =========================== */
 
 #home{
-
     min-height:100vh;
-
     display:flex;
-
-    justify-content:space-between;
-
     align-items:center;
-
+    justify-content:center;
     gap:80px;
-
-    padding:120px 10% 60px;
-
+    padding:120px 8%;
 }
 
-/* Left Side */
+/* Left */
 
 .hero-image{
-
     flex:1;
-
     display:flex;
-
     justify-content:center;
-
 }
 
-/* Portrait Card */
-
 .hero-image img{
-
-    width:30px;
-
-    height:420px;
-
+    width:350px;
+    height:490px;
     object-fit:cover;
-
-    border-radius:25px;
-
-    border:4px solid var(--primary);
+    border-radius:20px;
+    border:3px solid #3b82f6;
 
     box-shadow:
-        0 0 25px rgba(59,130,246,.30),
-        0 0 60px rgba(59,130,246,.20);
+        0 0 20px rgba(59,130,246,.25),
+        0 0 45px rgba(59,130,246,.15);
 
-    transition:.4s ease;
-
+    transition:.3s;
 }
 
 .hero-image img:hover{
-
-    transform:translateY(-8px) scale(1.02);
-
-    box-shadow:
-        0 0 35px rgba(59,130,246,.45),
-        0 0 70px rgba(59,130,246,.35);
-
+    transform:translateY(-8px);
 }
 
-/* Right Side */
+/* Right */
 
 .hero-content{
 
     flex:1.4;
 
-    padding-left:40px;
+    max-width:650px;
 
 }
 
 .hero-content h1{
 
-    font-size:70px;
+    font-size:64px;
 
     font-weight:800;
 
-    color:var(--white);
+    color:#fff;
+
+    margin-bottom:15px;
+
+    white-space:nowrap;
 
     line-height:1.1;
-
-    margin-bottom:20px;
 
 }
 
 .hero-content h2{
 
-    font-size:52px;
+    font-size:44px;
 
-    color:var(--primary);
+    color:#3b82f6;
 
     margin-bottom:25px;
 
@@ -398,13 +375,9 @@ header{
 
     color:#cbd5e1;
 
-    margin-bottom:40px;
-
-    max-width:650px;
+    margin-bottom:35px;
 
 }
-
-/* Buttons */
 
 .hero-buttons{
 
@@ -416,7 +389,7 @@ header{
 
 .btn{
 
-    padding:18px 42px;
+    padding:16px 36px;
 
     border-radius:12px;
 
@@ -424,13 +397,11 @@ header{
 
     color:white;
 
-    font-size:18px;
+    text-decoration:none;
 
     font-weight:600;
 
-    transition:.35s;
-
-    box-shadow:0 10px 30px rgba(59,130,246,.30);
+    transition:.3s;
 
 }
 
